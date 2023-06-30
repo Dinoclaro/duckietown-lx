@@ -31,7 +31,6 @@ def PIDController(
     ki = 0.2
     kd = 0.1
 
-
     # Error
     e = (theta_ref - theta_hat)
 
