@@ -14,7 +14,8 @@ mapping = {
     "cone": "ffa600",
     "floor": "000000",
     "grass": "000000",
-    "barrier": "000099"
+    "barrier": "000099",
+    "duckiebot": "ad0000"
 }
 mapping = {key: [int(h[i:i + 2], 16) for i in (0, 2, 4)] for key, h in mapping.items()}
 
@@ -40,7 +41,7 @@ def find_all_bboxes(mask):
 
 
 def find_all_boxes_and_classes(segmented_img):
-    classes = ["duckie", "cone", "truck", "bus"]
+    classes = ["duckie", "cone", "truck", "bus", "duckiebot"]
     all_boxes = []
     all_classes = []
     for i, class_name in enumerate(classes):

@@ -40,7 +40,7 @@ def xminyminxmaxymax2xywfnormalized(box, image_size):
 
 def train_test_split(filenames, split_percentage, dataset_dir):
     train_txt = np.array(filenames)
-    np.random.shuffle(train_txt)
+    np.random.shuffle(train_txt) 
     nb_things = len(train_txt)
     sp = int(split_percentage * nb_things)
     train_txt, val_txt = train_txt[:sp], train_txt[sp:]
